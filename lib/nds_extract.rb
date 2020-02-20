@@ -20,19 +20,7 @@ def directors_totals(nds)
   # Be sure to return the result at the end!
   pp nds 
   
-  
-  
-#   directors = directors_database[:names]
-#   movies = directors_database[0][:movies]
-#   i = 0 
-  
-#   while i < movies.length do 
-#     gross[i] = movies[i][:worldwide_gross]
-#     total_gross = {gross[i] += 1}
-#       puts  result = {directors[i] => total_gross}
-#       i += 1
-#   end 
-# end
+
 
 result = {}
 director_index = 0 
