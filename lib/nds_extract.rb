@@ -18,5 +18,59 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  pp nds 
+  
+  
+  
+#   directors = directors_database[:names]
+#   movies = directors_database[0][:movies]
+#   i = 0 
+  
+#   while i < movies.length do 
+#     gross[i] = movies[i][:worldwide_gross]
+#     total_gross = {gross[i] += 1}
+#       puts  result = {directors[i] => total_gross}
+#       i += 1
+#   end 
+# end
+
+result = {}
+director_index = 0 
+
+# while director_index < nds.length do 
+#   puts director_name = nds[director_index][:name]
+#   director_index = 0 
+#   movie_index = 0 
+  
+#   while movie_index < nds[director_index][:movies].length do 
+#     puts result = [director_name][director_index] => nds[director_index][:movies][movie_index][:worldwide_gross]
+    
+#     movie_index += 1 
+#   end 
+#     director_index += 1 
+ 
+# end 
+    
+# result
+# end 
+
+
+
+  director_index = 0
+  totals = {}
+
+  while director_index < nds.length do
+    director_name = nds[director_index][:name]
+    totals[director_name] = 0
+    movie_index = 0
+
+    while movie_index < nds[director_index][:movies].length do
+      totals[director_name] += nds[director_index][:movies][movie_index][:worldwide_gross]
+      movie_index += 1
+    end
+
+    director_index += 1
+  end
+
+  totals
 end
